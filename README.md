@@ -11,10 +11,10 @@ unibli/
 │ ├── models/
 │ ├── routes/
 │ └── tests/
-└── frontend/
-├── public/
-├── src/
-└── tests/
+├── frontend/
+│ ├── public/
+│ ├── src/
+  └── tests/
 ```
 
 ### Descrição dos diretórios
