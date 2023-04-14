@@ -1,0 +1,27 @@
+.loginButton {
+    border-radius: 16px !important;
+    background-color: #055904 !important;
+    border: 3px solid #055904 !important;
+
+    display: flex !important;
+    justify-content: center !important;/*eixo y*/ 
+
+    padding-left: 4vw !important;
+    padding-right: 4vw !important;;
+
+  } 
+
+.loginButton label{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+
+    padding-right: 6px;/*ESPAÇAMENTO ENTRE O LABEL E O ICONE*/
+}
+
+.loginButton i{
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 6px;/*ESPAÇAMENTO ENTRE O LABEL E O ICONE*/
+    
+}
