@@ -1,0 +1,37 @@
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #055904;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 5vw 0vh 2.5vw;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5vh;
+    padding-bottom: 2vh;
+  }
+
+  .logo > img {
+    width: 100px;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+
+  .loginButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ 
+  
