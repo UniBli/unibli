@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/*Definição GLOBAL - Componente Button - PRIMEREACT*/
+.p-button{
+  background-color: #055904 !important;
+  border: 3px solid #055904 !important;
+  border-radius: 16px !important;
+}
