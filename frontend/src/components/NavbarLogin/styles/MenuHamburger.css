@@ -1,0 +1,22 @@
+.p-sidebar-content{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+
+.btn-hamburger{
+    border: none !important;
+    background-color: #ffffff !important;
+    padding: 2vw !important;
+    color: #055904 !important;
+    height: 30px !important;
+}
+
+.pi-bars {
+    font-size: 30px !important;
+}
+
+
+.p-sidebar-content{
+    background-color: #055904 ;
+}
