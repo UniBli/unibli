@@ -1,8 +1,18 @@
+.logoutButton{
+    margin-top: 3.5vh !important;
+    color: #ffffff !important;
+    margin-left: 14vw !important;
+}
+.logoutButton:hover{
+    background-color: #ffffff !important;
+    color: #055904 !important;
+}
+
 .logoutButton .p-button-icon{
-    padding-top: 2px;
-    margin-right: 16px;
+    padding-top: 3px;
 }
 
 .logoutButton .p-button-label {
-    margin-left: 16px;
+    font-size: large !important;
+    font-weight: 500 !important;
 }
