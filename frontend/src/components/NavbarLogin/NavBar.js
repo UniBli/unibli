@@ -1,11 +1,13 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import LoginButton from "../Auth0/LoginButton.js";
-import './styles/NavbarLogin.css'
+import './styles/NavBar.css'
+
 
 import InputPesquisa from './InputPesquisa.js'
+import MenuHamburger from './MenuHamburger.js'
 
-const NavBar = () => {
+const NavBar = ({ isAuthenticated  }) => {
     return (
 
             <Navbar className="navbar">
@@ -17,7 +19,7 @@ const NavBar = () => {
                     />
                 </Navbar.Brand>
                 <InputPesquisa className="search"/>
-                <LoginButton className="loginButton"/>                
+                {isAuthenticated ? <MenuHamburger/> : <LoginButton className="loginButton"/>  }              
             </Navbar>
     )
 }
