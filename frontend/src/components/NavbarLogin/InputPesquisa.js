@@ -7,8 +7,8 @@ const InputPesquisa = () => {
     return (
         <>
             <div className="p-inputgroup container">
-                <InputText placeholder="Pesquise pelo título desejado" className="input-pesquisa"/>
-                <Button icon="pi pi-search" className="button-pesquisa"/>
+                <InputText placeholder="Pesquise pelo título desejado" className="input-pesquisa" />
+                <Button icon="pi pi-search" className="button-pesquisa" severity="success"/>
             </div>
         </>      
     )
