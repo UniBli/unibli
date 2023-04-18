@@ -16,5 +16,10 @@ code {
 /*Definição GLOBAL - Componente Button - PRIMEREACT*/
 .p-button {
   border-radius: 16px !important;
-}                                     
-  
+}  
+/*
+Definição GLOBAL - Pseudoclasse focus - PRIMEREACT
+*:focus {
+  box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5) !important;
+}
+*/
