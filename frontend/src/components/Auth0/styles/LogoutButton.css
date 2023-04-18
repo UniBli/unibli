@@ -1,18 +1,29 @@
+.containerLogoutButton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
 .logoutButton{
-    margin-top: 3.5vh !important;
+    margin-top: 10px !important;
     color: #ffffff !important;
-    margin-left: 14vw !important;
 }
 .logoutButton:hover{
     background-color: #ffffff !important;
     color: #055904 !important;
 }
 
-.logoutButton .p-button-icon{
-    padding-top: 3px;
-}
+
 
 .logoutButton .p-button-label {
+    text-align: end;
     font-size: large !important;
     font-weight: 500 !important;
+}
+
+
+
+.logoutButton .p-button-icon{
+    padding-top: 3px;
 }

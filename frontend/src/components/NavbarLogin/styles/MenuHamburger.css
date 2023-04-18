@@ -2,8 +2,28 @@
     display: flex !important;
     flex-direction: column;
     justify-content: flex-start !important;
+    background-color: #055904;
 }
 
+
+
+.p-sidebar-close{
+    border-radius: 10px !important;
+    border: 2px solid #055904 !important;
+}
+.p-sidebar-close:hover{
+    background-color: #055904 !important;
+    color: #ffffff !important;
+}
+.p-sidebar-close:focus{
+    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5) !important;
+}
+
+
+
+.pi-bars {
+    font-size: 30px !important;
+}
 .btn-hamburger{
     border: none !important;
     background-color: #ffffff !important;
@@ -11,12 +31,6 @@
     color: #055904 !important;
     height: 30px !important;
 }
-
-.pi-bars {
-    font-size: 30px !important;
-}
-
-
-.p-sidebar-content{
-    background-color: #055904 ;
+.btn-hamburger:focus{
+    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5) !important;
 }

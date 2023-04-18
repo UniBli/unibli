@@ -1,17 +1,22 @@
-.containerProfile  {
-    margin-top: 5vh;
-}
-
-.containerProfile .p-avatar {
-    margin-left: 15.5vw !important;
-    border: 4px solid #ffffff;
-}
-
 .p-sidebar-icon{
     color: #055904 !important;
 }
 
-.containerProfile h3,p {
+
+
+.avatarProfile  {
+    margin: 40px 0 8px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.avatarProfile .p-avatar{
+    border: 4px solid #ffffff;
+}
+
+
+
+ h3,p {
+    margin: 8px;
     color: #ffffff;
     text-align: right;
 }
