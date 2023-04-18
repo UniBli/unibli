@@ -8,17 +8,21 @@ const LogoutButton = () => {
   const { logout } = useAuth0();
 
   return (
-          <Button
-            label="Sair" 
-            icon="pi pi-sign-out" 
-            iconPos="right"
-            severity="success"
-            className="logoutButton"
-            onClick={() => logout({ 
-              logoutParams: { returnTo: window.location.origin } 
-            })}
-            text
-          />
+        <>
+          <div className="containerLogoutButton">
+            <Button
+              label="Sair" 
+              icon="pi pi-sign-out" 
+              iconPos="right"
+              severity="success"
+              className="logoutButton"
+              onClick={() => logout({ 
+                logoutParams: { returnTo: window.location.origin } 
+              })}
+              text
+            />
+          </div>
+        </>
   );
 };
 

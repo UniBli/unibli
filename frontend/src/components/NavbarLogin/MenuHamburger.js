@@ -16,8 +16,7 @@ const MenuHamburger = () => {
   return (
     <>
       <Button 
-        icon="pi pi-bars" 
-        severity="success"
+        icon="pi pi-bars"
         className="btn-hamburger"
         onClick={() => setVisibleRight(true)}
         text 
@@ -29,7 +28,7 @@ const MenuHamburger = () => {
         onHide={() => setVisibleRight(false)}
       >
         <Profile/>
-        <Divider  />
+        <Divider/>
         <LogoutButton/>
       </Sidebar>
     </>

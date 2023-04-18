@@ -16,11 +16,11 @@ const Profile = () => {
   return (
     isAuthenticated && (
       <>
-        <div className="containerProfile">
-        <Avatar image={user.picture} alt={user.name} size="xlarge" shape="circle"/>
+        <div className="avatarProfile">
+          <Avatar image={user.picture} alt={user.name} size="xlarge" shape="circle"/>
+        </div>
         <h3>{user.name}</h3>
         <p>{user.email}</p>
-        </div>
       </>
     )
   );

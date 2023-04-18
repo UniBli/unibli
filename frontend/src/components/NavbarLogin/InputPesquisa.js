@@ -6,7 +6,7 @@ import "./styles/InputPesquisa.css"
 const InputPesquisa = () => {
     return (
         <>
-            <div className="p-inputgroup container">
+            <div className="p-inputgroup containerInputPesquisa">
                 <InputText placeholder="Pesquise pelo título desejado" className="input-pesquisa" />
                 <Button icon="pi pi-search" className="button-pesquisa" severity="success"/>
             </div>
