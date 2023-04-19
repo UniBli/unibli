@@ -6,20 +6,7 @@ function App() {
   const {isAuthenticated} = useAuth0();
 
   return (
-    
-    <>
-      {//contexto JSX
-        isAuthenticated 
-        ?(//Para inserir REACT no contexto JSX
-            <>
-             <NavBar isAuthenticated={true} />
-            </>
-         ) 
-        :(
-            <NavBar isAuthenticated={false}/>
-         )
-      }
-    </>
+    <NavBar isAuthenticated={isAuthenticated} />
   );
 }
 
