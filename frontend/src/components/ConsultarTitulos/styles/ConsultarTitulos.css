@@ -1,0 +1,31 @@
+
+.consultarTitulos{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgBanner {
+    background: url('../../../assets/img/img_banner.png') no-repeat;
+    background-size: cover;
+    width:100%;
+    height:85vh;
+
+    padding: 0px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+.imgBanner > p{
+    font-family: 'Roboto', sans-serif;
+    margin: 0.1rem;
+    font-size: 2.5rem;
+    text-shadow: 0px 12px 30px #000000;
+}
+.imgBanner > p > span {
+    color: #8BC43E;
+    font-family: 'Montserrat';
+}
+  
