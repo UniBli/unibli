@@ -30,7 +30,7 @@ root.render(
           thumbSize={400}
           style={{ width: '100%', height: '100vh' }}
           renderThumbVertical={props => (
-            <div {...props} style={{ backgroundColor: '#055904', borderRadius:'5px' }} />
+            <div {...props} style={{ backgroundColor: '#055904', borderRadius:'5px' }}/>
           )}
         >
           <App/>
