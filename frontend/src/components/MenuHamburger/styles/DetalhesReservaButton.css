@@ -1,0 +1,29 @@
+.containerDetalhesReservaButton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.detalhesReservaButton{
+    margin-top: 10px !important;
+    color: #ffffff !important;
+}
+.detalhesReservaButton:hover{
+    background-color: #ffffff !important;
+    color: #055904 !important;
+}
+
+
+
+.detalhesReservaButton .p-button-label {
+    text-align: end;
+    font-size: large !important;
+    font-weight: 500 !important;
+}
+
+
+
+.detalhesReservaButton .p-button-icon{
+    padding-top: 3px;
+}

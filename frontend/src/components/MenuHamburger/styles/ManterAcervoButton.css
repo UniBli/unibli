@@ -1,0 +1,27 @@
+.containerManterAcervoButton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.manterAcervoButton{
+    margin-top: 10px !important;
+    color: #055904 !important;
+}
+.manterAcervoButton:hover{
+    background-color: #055904 !important; 
+    color: #ffffff !important;
+}
+
+
+
+.manterAcervoButton .p-button-label {
+    text-align: end;
+    font-size: large !important;
+    font-weight: 500 !important;
+}
+
+
+
+.manterAcervoButton .p-button-icon{
+    padding-top: 3px;
+}
