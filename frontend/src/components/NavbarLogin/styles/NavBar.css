@@ -1,10 +1,10 @@
 .navbar {
   background-color: #ffffff;
-  border-bottom: 3px solid #055904;
+  border-bottom: 5px solid #055904;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2vh 5vw 2vh 2.5vw;
+  padding: 1vh 3vw 1vh 1.5vw;
 }
 
 
@@ -13,11 +13,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1.5vh;
-  padding-bottom: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 .logo > img {
-  width: 100px;
+  width: 95px;
 }
 
 

@@ -1,31 +1,39 @@
 
-.consultarTitulos{
-    display: flex;
-    justify-content: flex-end;
-}
 
-.imgBanner {
+
+.banner{
     background: url('../../../assets/img/img_banner.png') no-repeat;
     background-size: cover;
-    width:100%;
-    height:85vh;
-
     padding: 0px 50px;
-
+    width:100%;
+    height:90vh;
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+
+.main{
+   margin: 30px 30px 0 30px;
+   text-align: justify;
+}
+
+.txtBanner {
     align-items: flex-end;
     justify-content: center;
-  }
-
-.imgBanner > p{
+}
+.txtBanner > p{
     font-family: 'Roboto', sans-serif;
     margin: 0.1rem;
     font-size: 2.5rem;
     text-shadow: 0px 12px 30px #000000;
 }
-.imgBanner > p > span {
+.txtBanner > p > span {
     color: #8BC43E;
     font-family: 'Montserrat';
 }
-  
+
+.scroll-panel {
+  height: 400px; /* Altura desejada para o painel de rolagem */
+  overflow: auto; /* Ou 'scroll' */
+}

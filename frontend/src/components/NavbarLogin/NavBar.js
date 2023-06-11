@@ -1,11 +1,9 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import LoginButton from "../Auth0/LoginButton.js";
+import InputPesquisa from "./InputPesquisa.js"
+import MenuHamburger from "../MenuHamburger/MenuHamburger.js"
 import './styles/NavBar.css'
-
-
-import InputPesquisa from './InputPesquisa.js'
-import MenuHamburger from './MenuHamburger.js'
 
 const NavBar = ({ isAuthenticated  }) => {
     return (
