@@ -1,24 +1,21 @@
-import React from "react";
+// components
 import { Button } from "primereact/button";
-
-
-import './styles/SettingsButton.css'
+// CSS scoped
+import styles from './styles/SettingsButton.module.css';
 
 const SettingsButton = () => {
 
   return (
-        <>
-          <div className="containerSettingsButton">
-            <Button
-              label="Configurações" 
-              icon="pi pi-cog" 
-              iconPos="right"
-              severity="success"
-              className="settingsButton"
-              text
-            />
-          </div>
-        </>
+    <div className={styles.containerSettingsButton}>
+      <Button
+        label="Configurações" 
+        icon="pi pi-cog" 
+        iconPos="right"
+        severity="success"
+        className={styles.settingsButton}
+        text
+      />
+    </div>
   );
 };
 

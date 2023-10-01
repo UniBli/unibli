@@ -1,24 +1,20 @@
-import React from "react";
-import { Button } from "primereact/button";
-
-
-import './styles/DetalhesReservaButton.css'
+// components
+import { Button } from 'primereact/button';
+// CSS scoped
+import styles from './styles/DetalhesReservaButton.module.css'
 
 const DetalhesReservaButton = () => {
-
   return (
-        <>
-          <div className="containerDetalhesReservaButton">
-            <Button
-              label="Detalhes da Reserva" 
-              icon="pi pi-info-circle" 
-              iconPos="right"
-              severity="success"
-              className="detalhesReservaButton"
-              text
-            />
-          </div>
-        </>
+    <div className={styles.containerDetalhesReservaButton}>
+      <Button
+        label='Detalhes da Reserva'
+        icon='pi pi-info-circle'
+        iconPos='right'
+        severity='success'
+        className={styles.detalhesReservaButton}
+        text
+      />
+    </div>
   );
 };
 
