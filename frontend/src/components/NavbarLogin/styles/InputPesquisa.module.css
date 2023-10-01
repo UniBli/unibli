@@ -1,0 +1,34 @@
+.containerInputPesquisa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+
+  margin: 0 10px;
+}
+
+
+.inputPesquisa {
+  border-radius: 16px 0px 0px 16px !important;
+  border: 3px solid #055904 !important;
+}
+.inputPesquisa:focus {
+  box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5) !important;
+}
+
+
+.buttonPesquisa{
+    justify-content: center;
+    align-items: center;
+    
+    width: 74px !important;/*largura do botão*/
+    padding: 10px 20px;
+    border-radius: 0px 16px 16px 0px !important;
+    
+    color: white;
+    background-color:#055904 !important;
+    border: solid #055904 !important;
+
+    cursor: pointer;
+}

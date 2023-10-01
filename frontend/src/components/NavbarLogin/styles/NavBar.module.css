@@ -1,18 +1,22 @@
 .navbar {
-  background-color: #ffffff;
-  border-bottom: 5px solid #055904;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1vh 3vw 1vh 1.5vw;
+  justify-content: space-around;
+  
+  background-color: #ffffff;
+  border-bottom: 5px solid #055904;
+  
+  width: 100%;
+  padding: 1vh 0;
+
+  position: relative;
 }
-
-
 
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
@@ -20,21 +24,10 @@
   width: 95px;
 }
 
-
-
-.search {
+.loginButton, .search {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
-
-.loginButton{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
   

@@ -1,0 +1,17 @@
+.profile, .usersActions {
+    margin-right: 10px !important;
+    background-color: #055904;
+}
+
+.hamburgerButton {
+    margin-right: 1%;
+}
+
+.bibliotecarioActions{
+    background-color: #ffffff;    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;   
+    margin-top: 12vh;
+}

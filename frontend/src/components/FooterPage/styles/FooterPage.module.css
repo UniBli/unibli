@@ -1,4 +1,4 @@
-#footer{
+#footer {
     background: linear-gradient(92.06deg, #055904 13.56%, #64AD00 108.46%);
     border-top: 11px solid #85CB27;
     
@@ -17,19 +17,20 @@
     margin-top: 30px;
 }
 
-.logoUniBli{
+.logoUniBli {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.logoUniBli > img{
-    width: 11.5vw;
+.logoUniBli img {
+    width: 70%;
     margin-bottom: 10px;
 }
 
-small:nth-child(n){
+small:nth-child(n) {
     font-weight: bold;
     display: flex;
     color: #ffff;
+    font-family: 'Roboto';
 }
 
