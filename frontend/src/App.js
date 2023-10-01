@@ -5,6 +5,8 @@ import NavBar from "./components/NavbarLogin/NavBar";
 import FooterPage from "./components/FooterPage/FooterPage";
 
 function App() {
+  
+  // hook do auth0
   const {isAuthenticated} = useAuth0();
 
   return (
