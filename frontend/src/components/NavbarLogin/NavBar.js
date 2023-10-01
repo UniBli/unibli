@@ -1,25 +1,25 @@
-import React from 'react';
+// components
 import Navbar from 'react-bootstrap/Navbar';
-import LoginButton from "../Auth0/LoginButton.js";
-import InputPesquisa from "./InputPesquisa.js"
-import MenuHamburger from "../MenuHamburger/MenuHamburger.js"
-import './styles/NavBar.css'
+import LoginButton from '../Auth0/LoginButton.js';
+import InputPesquisa from './InputPesquisa.js';
+import MenuHamburger from '../MenuHamburger/MenuHamburger.js';
+// CSS scoped
+import styles from './styles/NavBar.module.css';
 
 const NavBar = ({ isAuthenticated  }) => {
     return (
-
-            <Navbar className="navbar">
-                <Navbar.Brand className="logo">
+            <Navbar className={styles.navbar}>
+                <Navbar.Brand className={styles.logo}>
                     <img
-                    src="https://raw.githubusercontent.com/thyagoerick/unibli/1c3262dea4dcfe8fffc68eff66435db76f77a40b/frontend/public/img/logoUniBliNav_F-Positivo.svg"
-                    className="d-inline-block align-top"
-                    alt="Logo UniBli"
+                    src='./img/logoUniBliNav_F-Positivo.svg'
+                    className='d-inline-block align-top'
+                    alt='Logo UniBli'
                     />
                 </Navbar.Brand>
-                <InputPesquisa className="search"/>
-                {isAuthenticated ? <MenuHamburger/> : <LoginButton className="loginButton"/>  }              
+                <InputPesquisa className={styles.search}/>
+                {isAuthenticated ? <MenuHamburger/> : <LoginButton className='loginButton'/>  }              
             </Navbar>
-    )
-}
+    );
+};
 
 export default NavBar;
