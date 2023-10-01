@@ -1,8 +1,10 @@
-import { useAuth0 } from "@auth0/auth0-react";
 import React from 'react';
+import { useAuth0 } from "@auth0/auth0-react";
 import ConsultarTitulos from './components/ConsultarTitulos/ConsultarTitulos';
 import NavBar from "./components/NavbarLogin/NavBar";
 import FooterPage from "./components/FooterPage/FooterPage";
+
+import './App.css'
 
 function App() {
   
