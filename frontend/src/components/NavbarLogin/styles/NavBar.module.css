@@ -8,7 +8,7 @@
   
   width: 100%;
   padding: 1vh 0;
-
+  padding-right: 10px;/*apenas para compensar o encosto do botão*/
   position: relative;
 }
 
