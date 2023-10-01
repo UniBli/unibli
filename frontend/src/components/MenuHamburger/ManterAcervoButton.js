@@ -1,20 +1,19 @@
-import React from "react";
-import { Button } from "primereact/button";
-
-
-import './styles/ManterAcervoButton.css'
+// components
+import { Button } from 'primereact/button';
+// CSS scoped
+import style from './styles/ManterAcervoButton.module.css';
 
 const ManterAcervoButton = () => {
 
   return (
         <>
-          <div className="containerManterAcervoButton">
+          <div className={style.containerManterAcervoButton}>
             <Button
-              label="Manter Acervo" 
-              icon="pi pi-plus" 
-              iconPos="right"
-              severity="success"
-              className="manterAcervoButton"
+              label='Manter Acervo'
+              icon="pi pi-plus "
+              iconPos='right'
+              severity='success'
+              className={style.manterAcervoButton}
               text
             />
           </div>

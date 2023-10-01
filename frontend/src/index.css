@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
 
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
-/*Definição GLOBAL - Componente Button - PRIMEREACT*/
-.p-button {
-  border-radius: 16px !important;
-}  
-/*
-Definição GLOBAL - Pseudoclasse focus - PRIMEREACT
-*:focus {
-  box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5) !important;
+/*Configurando as scrolbars*/
+::-webkit-scrollbar {
+  width: 6px;
+} 
+::-webkit-scrollbar-track {
+  background: transparent;
 }
-*/
+::-webkit-scrollbar-thumb {
+  background-color: #055904 ;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #055904 transparent;
+}

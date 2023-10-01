@@ -1,12 +1,12 @@
-import React from 'react';
-import './styles/ConsultarTitulos.css';
+// CSS scoped
+import styles from './styles/ConsultarTitulos.module.css';
 
 function ConsultarTitulos() {
   return (
     <section id='consultarTitulos'>
 
-      <section className='banner'>
-        <div className='txtBanner'>
+      <section className={styles.banner}>
+        <div className={styles.txtBanner}>
           <p>O sistema <span>UniBli</span> veio</p>
           <p>para facilitar a vida do</p>
           <p>leitor Fatecano, que</p>
@@ -15,7 +15,7 @@ function ConsultarTitulos() {
         </div>
       </section>
       
-      <section className='main'>
+      <section className={styles.main}>
           Lorem exercitation qui aliquip consequat elit non ipsum qui. Proident nulla ad excepteur velit magna exercitation aute labore proident nisi. Amet eu ut exercitation exercitation do velit occaecat do sunt elit eiusmod ex dolor. Sunt adipisicing consectetur et do duis consectetur cillum do duis.
 
           Ea excepteur magna ullamco id reprehenderit Lorem. Aute aliqua veniam et id non. Enim cillum officia reprehenderit sunt adipisicing cillum laborum anim est esse ad ut elit ex. Amet pariatur sint laborum eiusmod magna qui non ea qui sint. Est excepteur ullamco ullamco anim et aliquip id. In fugiat ad velit dolore aliqua.
