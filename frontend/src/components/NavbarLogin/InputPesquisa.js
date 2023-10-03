@@ -18,7 +18,7 @@ const InputPesquisa = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setSearch('');
-        console.log('Formulário enviado!');
+        console.log('Busca efetuada!');
     }
     console.log(search);
 
