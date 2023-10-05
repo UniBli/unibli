@@ -162,4 +162,14 @@
         height: 71vh;   
     }    
 }
+
+/*para quando houver rotação*/
+@media (max-width:896px) and (orientation: landscape) {
+    .txtBanner {
+        top:200px;
+    }
+    .txtBanner > p{
+        font-size: 1.8rem;
+    }
+}
 /***************************************************/
