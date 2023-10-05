@@ -1,5 +1,5 @@
 // components
-import CardBook from '../CardBook/CardBook';
+import CardBook from '../../components/CardBook/CardBook';
 // CSS scoped
 import styles from './styles/ConsultarTitulos.module.css';
 // hooks
