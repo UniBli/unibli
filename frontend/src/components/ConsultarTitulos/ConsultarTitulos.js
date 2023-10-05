@@ -1,7 +1,22 @@
+// components
+import CardBook from '../CardBook/CardBook';
 // CSS scoped
 import styles from './styles/ConsultarTitulos.module.css';
 
+
 function ConsultarTitulos() {
+  // objeto de teste
+  const books =[
+    {id:1, disponibilidade: 1, qtd: 1, img:'https://books.google.com.br/books/publisher/content?id=MWkOEAAAQBAJ&hl=pt-BR&pg=PA2&img=1&zoom=3&sig=ACfU3U2bTyWRW6_GMC3Qh3gqEkM8hKxBLg&w=1280', nome:'Livro TESTE1'},
+    {id:2, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE2'},
+    {id:3, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE3'},
+    {id:4, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE4'},
+    {id:5, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE5'},
+    {id:5, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE5'},
+    {id:5, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE5'},
+    {id:5, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE5'},
+  ]
+
   return (
     <section id='consultarTitulos'>
 
@@ -15,55 +30,40 @@ function ConsultarTitulos() {
         </div>
       </section>
       
-      <section className={styles.main}>
-          Lorem exercitation qui aliquip consequat elit non ipsum qui. Proident nulla ad excepteur velit magna exercitation aute labore proident nisi. Amet eu ut exercitation exercitation do velit occaecat do sunt elit eiusmod ex dolor. Sunt adipisicing consectetur et do duis consectetur cillum do duis.
+     <div className={styles.main}>    
+          <div className={styles.containerBooks}>
+            <h2>Análise e Desenvolvimento de Sistemas:</h2>
+            <div className={styles.divScrollbarBooks}>
+              {books.map((book) => (
+                <CardBook key={book.id} disponibilidade={book.disponibilidade} 
+                        qtd={book.qtd} img={book.img} nome={book.nome}
+                />
+              ))}
+            </div>
+          </div> 
 
-          Ea excepteur magna ullamco id reprehenderit Lorem. Aute aliqua veniam et id non. Enim cillum officia reprehenderit sunt adipisicing cillum laborum anim est esse ad ut elit ex. Amet pariatur sint laborum eiusmod magna qui non ea qui sint. Est excepteur ullamco ullamco anim et aliquip id. In fugiat ad velit dolore aliqua.
-        
+          <div className={styles.containerBooks}>
+            <h2>Gestão de Recursos Humanos:</h2>
+            <div className={styles.divScrollbarBooks}>
+              {books.map((book) => (
+                <CardBook key={book.id} disponibilidade={book.disponibilidade} 
+                        qtd={book.qtd} img={book.img} nome={book.nome}
+                />
+              ))}
+            </div>
+          </div>   
 
-          Excepteur adipisicing laboris ex consequat dolore est incididunt tempor id. Aute veniam aliqua est mollit cupidatat cillum consectetur. Nisi officia sint pariatur ullamco nostrud irure eiusmod ea ea voluptate. Nostrud fugiat reprehenderit nulla ea eiusmod. Enim tempor voluptate amet duis fugiat velit non. Elit veniam anim velit incididunt eu in elit sunt reprehenderit laboris est.
-
-  Lorem exercitation qui aliquip consequat elit non ipsum qui. Proident nulla ad excepteur velit magna exercitation aute labore proident nisi. Amet eu ut exercitation exercitation do velit occaecat do sunt elit eiusmod ex dolor. Sunt adipisicing consectetur et do duis consectetur cillum do duis.
-
-  Ea excepteur magna ullamco id reprehenderit Lorem. Aute aliqua veniam et id non. Enim cillum officia reprehenderit sunt adipisicing cillum laborum anim est esse ad ut elit ex. Amet pariatur sint laborum eiusmod magna qui non ea qui sint. Est excepteur ullamco ullamco anim et aliquip id. In fugiat ad velit dolore aliqua.
-
-  Excepteur adipisicing laboris ex consequat dolore est incididunt tempor id. Aute veniam aliqua est mollit cupidatat cillum consectetur. Nisi officia sint pariatur ullamco nostrud irure eiusmod ea ea voluptate. Nostrud fugiat reprehenderit nulla ea eiusmod. Enim tempor voluptate amet duis fugiat velit non. Elit veniam anim velit incididunt eu in elit sunt reprehenderit laboris est.
-
-          Lorem exercitation qui aliquip consequat elit non ipsum qui. Proident nulla ad excepteur velit magna exercitation aute labore proident nisi. Amet eu ut exercitation exercitation do velit occaecat do sunt elit eiusmod ex dolor. Sunt adipisicing consectetur et do duis consectetur cillum do duis.
-
-          Ea excepteur magna ullamco id reprehenderit Lorem. Aute aliqua veniam et id non. Enim cillum officia reprehenderit sunt adipisicing cillum laborum anim est esse ad ut elit ex. Amet pariatur sint laborum eiusmod magna qui non ea qui sint. Est excepteur ullamco ullamco anim et aliquip id. In fugiat ad velit dolore aliqua.
-        
-          Excepteur adipisicing laboris ex consequat dolore est incididunt tempor id. Aute veniam aliqua est mollit cupidatat cillum consectetur. Nisi officia sint pariatur ullamco nostrud irure eiusmod ea ea voluptate. Nostrud fugiat reprehenderit nulla ea eiusmod. Enim tempor voluptate amet duis fugiat velit non. Elit veniam anim velit incididunt eu in elit sunt reprehenderit laboris est.
-
-  Lorem exercitation qui aliquip consequat elit non ipsum qui. Proident nulla ad excepteur velit magna exercitation aute labore proident nisi. Amet eu ut exercitation exercitation do velit occaecat do sunt elit eiusmod ex dolor. Sunt adipisicing consectetur et do duis consectetur cillum do duis.
-
-  Ea excepteur magna ullamco id reprehenderit Lorem. Aute aliqua veniam et id non. Enim cillum officia reprehenderit sunt adipisicing cillum laborum anim est esse ad ut elit ex. Amet pariatur sint laborum eiusmod magna qui non ea qui sint. Est excepteur ullamco ullamco anim et aliquip id. In fugiat ad velit dolore aliqua.
-
-  Excepteur adipisicing laboris ex consequat dolore est incididunt tempor id. Aute veniam aliqua est mollit cupidatat cillum consectetur. Nisi officia sint pariatur ullamco nostrud irure eiusmod ea ea voluptate. Nostrud fugiat reprehenderit nulla ea eiusmod. Enim tempor voluptate amet duis fugiat velit non. Elit veniam anim velit incididunt eu in elit sunt reprehenderit laboris est.
-
-          Lorem exercitation qui aliquip consequat elit non ipsum qui. Proident nulla ad excepteur velit magna exercitation aute labore proident nisi. Amet eu ut exercitation exercitation do velit occaecat do sunt elit eiusmod ex dolor. Sunt adipisicing consectetur et do duis consectetur cillum do duis.
-
-          Ea excepteur magna ullamco id reprehenderit Lorem. Aute aliqua veniam et id non. Enim cillum officia reprehenderit sunt adipisicing cillum laborum anim est esse ad ut elit ex. Amet pariatur sint laborum eiusmod magna qui non ea qui sint. Est excepteur ullamco ullamco anim et aliquip id. In fugiat ad velit dolore aliqua.
-        
-          Excepteur adipisicing laboris ex consequat dolore est incididunt tempor id. Aute veniam aliqua est mollit cupidatat cillum consectetur. Nisi officia sint pariatur ullamco nostrud irure eiusmod ea ea voluptate. Nostrud fugiat reprehenderit nulla ea eiusmod. Enim tempor voluptate amet duis fugiat velit non. Elit veniam anim velit incididunt eu in elit sunt reprehenderit laboris est.
-
-  Lorem exercitation qui aliquip consequat elit non ipsum qui. Proident nulla ad excepteur velit magna exercitation aute labore proident nisi. Amet eu ut exercitation exercitation do velit occaecat do sunt elit eiusmod ex dolor. Sunt adipisicing consectetur et do duis consectetur cillum do duis.
-
-  Ea excepteur magna ullamco id reprehenderit Lorem. Aute aliqua veniam et id non. Enim cillum officia reprehenderit sunt adipisicing cillum laborum anim est esse ad ut elit ex. Amet pariatur sint laborum eiusmod magna qui non ea qui sint. Est excepteur ullamco ullamco anim et aliquip id. In fugiat ad velit dolore aliqua.
-
-  Excepteur adipisicing laboris ex consequat dolore est incididunt tempor id. Aute veniam aliqua est mollit cupidatat cillum consectetur. Nisi officia sint pariatur ullamco nostrud irure eiusmod ea ea voluptate. Nostrud fugiat reprehenderit nulla ea eiusmod. Enim tempor voluptate amet duis fugiat velit non. Elit veniam anim velit incididunt eu in elit sunt reprehenderit laboris est.
-
-          Lorem exercitation qui aliquip consequat elit non ipsum qui. Proident nulla ad excepteur velit magna exercitation aute labore proident nisi. Amet eu ut exercitation exercitation do velit occaecat do sunt elit eiusmod ex dolor. Sunt adipisicing consectetur et do duis consectetur cillum do duis.
-
-          Ea excepteur magna ullamco id reprehenderit Lorem. Aute aliqua veniam et id non. Enim cillum officia reprehenderit sunt adipisicing cillum laborum anim est esse ad ut elit ex. Amet pariatur sint laborum eiusmod magna qui non ea qui sint. Est excepteur ullamco ullamco anim et aliquip id. In fugiat ad velit dolore aliqua.
-        
-          Excepteur adipisicing laboris ex consequat dolore est incididunt tempor id. Aute veniam aliqua est mollit cupidatat cillum consectetur. Nisi officia sint pariatur ullamco nostrud irure eiusmod ea ea voluptate. Nostrud fugiat reprehenderit nulla ea eiusmod. Enim tempor voluptate amet duis fugiat velit non. Elit veniam anim velit incididunt eu in elit sunt reprehenderit laboris est.
-
-  Lorem exercitation qui aliquip consequat elit non ipsum qui. Proident nulla ad excepteur velit magna exercitation aute labore proident nisi. Amet eu ut exercitation exercitation do velit occaecat do sunt elit eiusmod ex dolor. Sunt adipisicing consectetur et do duis consectetur cillum do duis.
-
-  Ea excepteur magna ullamco id reprehenderit Lorem. Aute aliqua veniam et id non. Enim cillum officia reprehenderit sunt adipisicing cillum laborum anim est esse ad ut elit ex. Amet pariatur sint laborum eiusmod magna qui non ea qui sint. Est excepteur ullamco ullamco anim et aliquip id. In fugiat ad velit dolore aliqua.
-
-      </section>
+          <div className={styles.containerBooks}>
+            <h2>Gestão Comercial:</h2>
+            <div className={styles.divScrollbarBooks}>
+              {books.map((book) => (
+                <CardBook key={book.id} disponibilidade={book.disponibilidade} 
+                        qtd={book.qtd} img={book.img} nome={book.nome}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
 
     </section>
   );
