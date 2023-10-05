@@ -6,7 +6,7 @@ import FooterPage from "./components/FooterPage/FooterPage";
 
 import './App.css'
 
-function App() {
+const App = () => {
   
   // hook do auth0
   const {isAuthenticated} = useAuth0();
