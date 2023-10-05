@@ -63,9 +63,9 @@ const ConsultarTitulos = () => {
   }, [scrollDirection, scrollSpeed]);
 
   return (
-    <section id='consultarTitulos'>
-
+    <main>
       <section className={styles.banner}>
+        <img className={styles.imgBanner} src="./img_banner.png" alt="" />
         <div className={styles.txtBanner}>
           <p>O sistema <span>UniBli</span> veio</p>
           <p>para facilitar a vida do</p>
@@ -75,7 +75,7 @@ const ConsultarTitulos = () => {
         </div>
       </section>
       
-     <div className={styles.main}>    
+     <section className={styles.books}>    
           <div className={styles.containerBooks}>
             <h2>Análise e Desenvolvimento de Sistemas:</h2>
             <div className={styles.divScrollbarBooks}
@@ -112,9 +112,9 @@ const ConsultarTitulos = () => {
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
-    </section>
+    </main>
   );
 }
 
