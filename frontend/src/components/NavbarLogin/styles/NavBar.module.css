@@ -31,3 +31,19 @@
 }
 
   
+
+/*Media queries*/
+/*usando max-width se lê: 569px é o seu máximo, passou aplica outro style*/
+@media (max-width:569px){
+  .navbar {
+    flex-wrap: wrap; 
+    padding: 20px 0;
+  }
+}
+
+
+@media (max-width:559px){
+  .navbar {
+    gap: 20px;
+  }
+}

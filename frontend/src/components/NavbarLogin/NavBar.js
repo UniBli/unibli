@@ -17,7 +17,7 @@ const NavBar = ({ isAuthenticated  }) => {
                     />
                 </Navbar.Brand>
                 <InputPesquisa className={styles.search}/>
-                {isAuthenticated ? <MenuHamburger/> : <LoginButton className='loginButton'/>  }              
+                {isAuthenticated ? <MenuHamburger/> : <LoginButton className={styles.loginButton}/>  }              
             </Navbar>
     );
 };
