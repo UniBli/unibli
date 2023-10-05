@@ -10,10 +10,11 @@
 .inputPesquisa {
   border-radius: 16px 0px 0px 16px !important;
   border:2px solid #055904 !important;
-  outline:2px solid #055904 ;
 }
 .inputPesquisa:focus {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5) !important;
+  border:2px solid #055904 !important;
+  outline:2px solid #055904 ;
 }
 
 
@@ -27,9 +28,7 @@
     
     color: white;
     background-color:#055904 !important;
-    border: 1px solid #055904 !important;
-    outline: 2px solid #055904 ;
-
+    border: 2px solid #055904 !important;
     cursor: pointer;
 }
 
