@@ -12,6 +12,10 @@
   position: relative;
 }
 
+.navbar a {
+  text-decoration: none;
+}
+
 .logo {
   display: flex;
   align-items: center;

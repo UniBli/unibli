@@ -2,6 +2,10 @@
     margin-right: 10px !important;
     background-color: #055904;
 }
+.usersActions , .bibliotecarioActions, a{
+    text-decoration: none;
+}
+
 
 .hamburgerButton {
     margin-right: 1%;
