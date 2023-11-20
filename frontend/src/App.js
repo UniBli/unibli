@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // hooks
 import { useAuth0 } from "@auth0/auth0-react";
-//import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // pages
 import Settings from './pages/SettingsPage/Settings.js';
@@ -18,14 +18,13 @@ import ReservarTitulos from './pages/ReservarTitulosPage/ReservarTitulos.js';
 import './App.css'
 
 // Base URL do Back (json-server)
-//const url = 'http://localhost:3000/books'
+const url = 'http://localhost:3000/books'
 
 const App = () => {
   // hook do auth0
   const {isAuthenticated} = useAuth0();
 
   //GET - Para obter os livros (json-server)
-  /*
   const [books, setbooks] = useState([]);
   useEffect(() => {  
     const fetchData = async () => {
@@ -35,9 +34,9 @@ const App = () => {
     };
     fetchData();
   }, []);
-  */
 
   //Objeto de teste
+  /*
   const books =[
     {id:1, disponibilidade: 1, qtd: 1, img:'https://books.google.com.br/books/publisher/content?id=MWkOEAAAQBAJ&hl=pt-BR&pg=PA2&img=1&zoom=3&sig=ACfU3U2bTyWRW6_GMC3Qh3gqEkM8hKxBLg&w=1280', nome:'Livro TESTE1'},
     {id:2, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE2'},
@@ -48,6 +47,7 @@ const App = () => {
     {id:7, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE5'},
     {id:8, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE5'},
   ]
+  */
 
   return (
     <>
