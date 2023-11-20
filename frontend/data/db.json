@@ -1,0 +1,60 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "disponibilidade": 1,
+            "qtd": 1,
+            "img": "https://books.google.com.br/books/publisher/content?id=MWkOEAAAQBAJ&hl=pt-BR&pg=PA2&img=1&zoom=3&sig=ACfU3U2bTyWRW6_GMC3Qh3gqEkM8hKxBLg&w=1280",
+            "nome": "Livro TESTE1"
+        },
+        {
+            "id": 2,
+            "disponibilidade": 1,
+            "qtd": 1,
+            "img": "",
+            "nome": "Livro TESTE2"
+        },
+        {
+            "id": 3,
+            "disponibilidade": 1,
+            "qtd": 1,
+            "img": "",
+            "nome": "Livro TESTE3"
+        },
+        {
+            "id": 4,
+            "disponibilidade": 1,
+            "qtd": 1,
+            "img": "",
+            "nome": "Livro TESTE4"
+        },
+        {
+            "id": 5,
+            "disponibilidade": 1,
+            "qtd": 1,
+            "img": "",
+            "nome": "Livro TESTE5"
+        },
+        {
+            "id": 6,
+            "disponibilidade": 1,
+            "qtd": 1,
+            "img": "",
+            "nome": "Livro TESTE5"
+        },
+        {
+            "id": 7,
+            "disponibilidade": 1,
+            "qtd": 1,
+            "img": "",
+            "nome": "Livro TESTE5"
+        },
+        {
+            "id": 8,
+            "disponibilidade": 1,
+            "qtd": 1,
+            "img": "",
+            "nome": "Livro TESTE5"
+        }
+    ]
+}
