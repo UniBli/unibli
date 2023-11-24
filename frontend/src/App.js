@@ -9,10 +9,12 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 // pages
 import Settings from './pages/SettingsPage/Settings.js';
-import ConsultarTitulos from './pages/ConsultarTitulosPage/ConsultarTitulos.js';
 import DetalhesReserva from './pages/DetalhesReservaPage/DetalhesReserva.js';
 import ManterAcervo from './pages/ManterAcervoPage/ManterAcervo.js';
 import ReservarTitulos from './pages/ReservarTitulosPage/ReservarTitulos.js';
+import ConsultarTitulos from './pages/ConsultarTitulosPage/ConsultarTitulos.js';
+import ResultadoConsultarTitulos from './pages/ConsultarTitulosPage/ResultadoConsultarTitulos.js'
+import NotFound from "./pages/NotFoundPage/NotFound.js";
 
 // styles
 import './App.css'
@@ -45,9 +47,22 @@ const App = () => {
     {id:3, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE3'},
     {id:4, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE4'},
     {id:5, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE5'},
-    {id:6, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE5'},
-    {id:7, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE5'},
-    {id:8, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE5'},
+    {id:6, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE6'},
+    {id:7, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE7'},
+    {id:8, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE8'},
+    {id:9, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE9'},
+    {id:10, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE10'},
+    {id:11, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE11'},
+    {id:12, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE12'},
+    {id:13, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE13'},
+    {id:14, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE14'},
+    {id:15, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE15'},
+    {id:16, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE16'},
+    {id:17, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE17'},
+    {id:18, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE18'},
+    {id:19, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE19'},
+    {id:20, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE20'},
+    {id:21, disponibilidade: 1, qtd: 1, img:'', nome:'Livro TESTE21'},
   ]
   /**/
 
@@ -55,19 +70,22 @@ const App = () => {
     <>
       <BrowserRouter>
         
-        <NavBar isAuthenticated={isAuthenticated} />
+        <NavBar books={books} isAuthenticated={isAuthenticated} />
         
         <Routes>
           <Route path="/" element={<ConsultarTitulos books={books}/>}/>
           <Route path="/settings" element={<Settings/>}/>
           <Route path="/bookingDetails" element={<DetalhesReserva/>}/>
           <Route path="/maintainCollection" element={<ManterAcervo/>}/>
-          <Route path="/reservarTitulos/:bookId" element={<ReservarTitulos books={books}/>}/>
+          <Route path="/reserveTitles/:bookId" element={<ReservarTitulos books={books}/>}/>
+          <Route path="/consultTitles/:titleBook" element={<ResultadoConsultarTitulos books={books}/>}/>
+        
+          <Route path="*" element={<NotFound/>}/>
         </Routes>    
+        <FooterPage/>
       </BrowserRouter>
 
      
-      <FooterPage/>
     </>
   );
 }
