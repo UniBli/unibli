@@ -31,13 +31,13 @@ const Profile = () => {
 
   return (
     isAuthenticated && (
-      <>
+      <div className={styles.sidebar}>
         <div className={styles.containerAvatarProfile}>
           <Avatar className={styles.avatarProfile} image={user.picture} alt={user.name} size='xlarge' shape='circle'/>
         </div>
         <h3>{user.name}</h3>
         <p>{user.email}</p>
-      </>
+      </div>
     )
   );
 };
