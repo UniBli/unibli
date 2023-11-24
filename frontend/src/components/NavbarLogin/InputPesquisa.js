@@ -1,5 +1,6 @@
 // components
 import { InputText } from 'primereact/inputtext';
+import { Link } from 'react-router-dom';
 // hooks
 import { useState } from 'react';
 // CSS scoped
@@ -18,9 +19,7 @@ const InputPesquisa = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setSearch('');
-        console.log('Busca efetuada!');
     }
-    console.log(search);
 
     return (
         <div className={styles.containerInputPesquisa}>
@@ -33,13 +32,17 @@ const InputPesquisa = () => {
                     name='search'
                     onChange={handleSearch}
                     value={search}
+                    required
                 />
-                <button
-                    type='submit'
-                    className={styles.buttonPesquisa}
-                >
-                    <i className='pi pi-search'></i>
-                </button>
+                <Link to={search.trim() !== '' ? `/consultTitles/${search}` : '#'}>
+                    <button
+                        type='submit'
+                        className={styles.buttonPesquisa}
+                    >
+                        <i className='pi pi-search'></i>
+                    </button>
+                </Link>
+
             </form>
         </div>      
     );
