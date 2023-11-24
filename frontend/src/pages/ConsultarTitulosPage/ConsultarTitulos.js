@@ -3,7 +3,7 @@ import CardBook from '../../components/CardBook/CardBook';
 import { Link } from 'react-router-dom';
 
 // CSS scoped
-import styles from './ConsultarTitulos.module.css';
+import styles from './styles/ConsultarTitulos.module.css';
 
 const ConsultarTitulos = ({ books }) => {
 
@@ -25,7 +25,7 @@ const ConsultarTitulos = ({ books }) => {
           <h2>Análise e Desenvolvimento de Sistemas:</h2>
           <div className={styles.divScrollbarBooks}>
             {books.map((book) => (
-              <Link key={book.id} to={`/reservarTitulos/${book.id}`}>
+              <Link key={book.id} to={`/reserveTitles/${book.id}`}>
                 <CardBook disponibilidade={book.disponibilidade}
                   qtd={book.qtd} img={book.img} nome={book.nome}
                 />
@@ -38,7 +38,7 @@ const ConsultarTitulos = ({ books }) => {
           <h2>Gestão de Recursos Humanos:</h2>
           <div className={styles.divScrollbarBooks}>
             {books.map((book) => (
-              <Link key={book.id}  to={`/reservarTitulos/${book.id}`}>
+              <Link key={book.id}  to={`/reserveTitles/${book.id}`}>
                 <CardBook disponibilidade={book.disponibilidade}
                   qtd={book.qtd} img={book.img} nome={book.nome}
                 />
@@ -51,7 +51,7 @@ const ConsultarTitulos = ({ books }) => {
           <h2>Gestão Comercial:</h2>
           <div className={styles.divScrollbarBooks}>
             {books.map((book) => (
-              <Link key={book.id} to={`/reservarTitulos/${book.id}`}>
+              <Link key={book.id} to={`/reserveTitles/${book.id}`}>
                 <CardBook disponibilidade={book.disponibilidade}
                   qtd={book.qtd} img={book.img} nome={book.nome}
                 />
