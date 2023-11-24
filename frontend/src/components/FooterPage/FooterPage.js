@@ -1,16 +1,20 @@
 //CSS scoped
 import styles from './styles/FooterPage.module.css';
+import { Link } from 'react-router-dom';
 
 const FooterPage = () => {
   return (
     <>
       <section id={styles.footer}>
         <div className={styles.logoUniBli}>
+          <Link to="/">
+
           <img
-            src='./img/logoUniBli+Texto_F-Negativo.svg'
+            src='../img/logoUniBli+Texto_F-Negativo.svg'
             className='d-inline-block align-top'
             alt='Logo UniBli'
-          />
+            />
+            </Link>
           <small>Todos os direitos reservados a ©UniBli</small>
         </div>
 

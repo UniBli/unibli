@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&family=Nunito:wght@200;400;500&display=swap');
 
 * {
   margin: 0;
@@ -27,3 +27,9 @@ body{
   scrollbar-width: thin;
   scrollbar-color: #055904 transparent;
 }
+
+::selection {
+  background-color: #055904;
+  color: #fff;
+}
+

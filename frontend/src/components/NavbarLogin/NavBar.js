@@ -8,19 +8,22 @@ import { Link } from 'react-router-dom';
 // CSS scoped
 import styles from './styles/NavBar.module.css';
 
-const NavBar = ({ isAuthenticated  }) => {
+const NavBar = ({ books, isAuthenticated  }) => {
+
+
+
     return (
             <Navbar className={styles.navbar}>
                 <Link to="/">
                     <Navbar.Brand className={styles.logo}>
                         <img
-                        src='./img/logoUniBliNav_F-Positivo.svg'
+                        src='../img/logoUniBliNav_F-Positivo.svg'
                         className='d-inline-block align-top'
                         alt='Logo UniBli'
                         />
                     </Navbar.Brand>
                 </Link>    
-                <InputPesquisa className={styles.search}/>
+                <InputPesquisa books={books} className={styles.search}/>
                 {isAuthenticated ? <MenuHamburger/> : <LoginButton className={styles.loginButton}/>  }              
             </Navbar>
     );

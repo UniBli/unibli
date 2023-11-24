@@ -3,7 +3,7 @@
     justify-content: center;
     text-align: center !important;
     border-radius: 16px !important;
-    padding: 10px 20px !important ;
+    padding: 10px 20px !important;
 }
 
 
@@ -16,20 +16,25 @@
     background-color: #055904 !important;
     padding: 0 !important;
 }
+
 .p-sidebar .p-button {
     border-radius: 16px !important;
 }
+
 .p-sidebar-close {
     border-radius: 10px !important;
     border: 2px solid #055904 !important;
 }
+
 .p-sidebar-close:hover {
     background-color: #055904 !important;
     color: #ffffff !important;
 }
+
 .p-sidebar-close:focus {
     box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5) !important;
 }
+
 .p-sidebar-header {
     justify-content: space-between !important;
 }
@@ -44,16 +49,56 @@ span.p-button-icon.p-c.pi.pi-bars {
     border: none !important;
     color: #055904 !important;
 }
+
 /*proporções internas*/
 .p-button.p-button-icon-only {
     padding: 0 !important;
 }
+
 /*controlla a sombra e borda do botão*/
 .p-button.p-button-icon-only:focus {
     box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5) !important;
 }
+
 /*controla o tamanho do botão*/
 .p-button.p-component.p-button-icon-only.p-button-text {
     width: 50px;
     border-radius: 10px;
+}
+
+.p-button:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5) !important;
+}
+
+.p-button.p-button-text:enabled:active,
+.p-button.p-button-text:not(button):not(a):not(.p-disabled):active {
+    background: rgba(72, 180, 97, 0.5) !important;
+    color: rgb(123, 255, 0) !important;
+    border-color: transparent;
+}
+
+
+/* Definição GLOBAL - DataScroller */
+.p-datascroller-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center;
+}
+
+ul.p-datascroller-list li {
+    display: inline-block !important;
+    /* Exibe os itens horizontalmente */
+}
+
+.p-datascroller-footer {
+    background-color: #ffffff !important;
+    border: none !important;
+}
+
+.p-datascroller-footer button {
+    background: #055904 !important;
+    border: 1px solid #055904 !important;
+    border-radius: 60px;
 }
