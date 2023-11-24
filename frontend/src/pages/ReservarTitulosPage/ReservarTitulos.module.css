@@ -1,3 +1,9 @@
+.divImgBook {
+    display: flex;
+    flex-direction: row-reverse !important;
+
+}
+
 /* APAGAR DEPOIS*/
 .tamanhoTela{
     width: 100%;
@@ -9,6 +15,3 @@
     justify-content: center;/*eixo x*/
 }
 /* APAGAR DEPOIS*/
-
-
-
