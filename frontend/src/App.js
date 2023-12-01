@@ -1,11 +1,5 @@
-// components
-import NavBar from "./components/NavbarLogin/NavBar";
-import FooterPage from "./components/FooterPage/FooterPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 // hooks
 import { useAuth0 } from "@auth0/auth0-react";
-//import { useState, useEffect } from "react";
 
 // pages
 import Settings from './pages/SettingsPage/Settings.js';
@@ -16,28 +10,17 @@ import ConsultarTitulos from './pages/ConsultarTitulosPage/ConsultarTitulos.js';
 import ResultadoConsultarTitulos from './pages/ConsultarTitulosPage/ResultadoConsultarTitulos.js'
 import NotFound from "./pages/NotFoundPage/NotFound.js";
 
+// components
+import NavBar from "./components/NavbarLogin/NavBar";
+import FooterPage from "./components/FooterPage/FooterPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 // styles
 import './App.css'
-
-// Base URL do Back (json-server)
-//const url = 'http://localhost:3000/books'
 
 const App = () => {
   // hook do auth0
   const {isAuthenticated} = useAuth0();
-
-  //GET - Para obter os livros (json-server)
-  /*
-  const [books, setbooks] = useState([]);
-  useEffect(() => {  
-    const fetchData = async () => {
-      const res = await fetch(url); 
-      const data = await res.json();
-      setbooks(data);
-    };
-    fetchData();
-  }, []);
-  */
 
   //Objeto de teste
   /**/
@@ -68,8 +51,7 @@ const App = () => {
 
   return (
     <>
-      <BrowserRouter>
-        
+      <BrowserRouter>    
         <NavBar books={books} isAuthenticated={isAuthenticated} />
         
         <Routes>
