@@ -74,12 +74,20 @@ const App = () => {
         
         <Routes>
           <Route path="/" element={<ConsultarTitulos books={books}/>}/>
-          <Route path="/settings" element={<Settings/>}/>
-          <Route path="/bookingDetails" element={<DetalhesReserva/>}/>
-          <Route path="/maintainCollection" element={<ManterAcervo/>}/>
+          
+          {/* Rotas Privadas */}
+          {isAuthenticated && (
+            <>
+              <Route path="/settings" element={<Settings/>}/>
+              <Route path="/bookingDetails" element={<DetalhesReserva/>}/>
+              <Route path="/maintainCollection" element={<ManterAcervo/>}/>
+            </>
+          )}
+
+          {/* Rotas Públicas */}
           <Route path="/reserveTitles/:bookId" element={<ReservarTitulos books={books}/>}/>
           <Route path="/consultTitles/:titleBook" element={<ResultadoConsultarTitulos books={books}/>}/>
-        
+
           <Route path="*" element={<NotFound/>}/>
         </Routes>    
         <FooterPage/>
