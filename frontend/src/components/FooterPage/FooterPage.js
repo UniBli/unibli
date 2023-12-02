@@ -10,7 +10,7 @@ const FooterPage = () => {
           <Link to="/">
 
           <img
-            src='../img/logoUniBli+Texto_F-Negativo.svg'
+            src='https://raw.githubusercontent.com/UniBli/unibli/main/frontend/public/img/logoUniBli%2BTexto_F-Negativo.svg'
             className='d-inline-block align-top'
             alt='Logo UniBli'
             />
