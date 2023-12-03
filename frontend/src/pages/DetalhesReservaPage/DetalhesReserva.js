@@ -1,4 +1,6 @@
 import styles from './DetalhesReserva.module.css'
+import { withAuthenticationRequired } from '@auth0/auth0-react';
+import Redirect from '../RedirectPage/Redirect';
 
 const DetalhesReserva = () => {
   return (
@@ -10,4 +12,7 @@ const DetalhesReserva = () => {
   )
 }
 
-export default DetalhesReserva
+export default withAuthenticationRequired(DetalhesReserva, {
+  // Show a message while the user waits to be redirected to the login page.
+  onRedirecting: () => (<Redirect/>)
+});

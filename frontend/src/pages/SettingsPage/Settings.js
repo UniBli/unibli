@@ -1,4 +1,6 @@
+import Redirect from '../RedirectPage/Redirect';
 import styles from './Settings.module.css';
+import { withAuthenticationRequired } from '@auth0/auth0-react';
 
 const Settings = () => {
   return (
@@ -6,4 +8,7 @@ const Settings = () => {
   )
 }
 
-export default Settings
+export default withAuthenticationRequired(Settings, {
+  // Show a message while the user waits to be redirected to the login page.
+  onRedirecting: () => (<Redirect/>)
+});
