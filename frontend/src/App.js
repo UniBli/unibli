@@ -54,22 +54,16 @@ const App = () => {
       <BrowserRouter>    
         <NavBar books={books} isAuthenticated={isAuthenticated} />
         
-        <Routes>
-          <Route path="/" element={<ConsultarTitulos books={books}/>}/>
-          
+        <Routes>       
           {/* Rotas Privadas */}
-          {isAuthenticated && (
-            <>
-              <Route path="/settings" element={<Settings/>}/>
-              <Route path="/bookingDetails" element={<DetalhesReserva/>}/>
-              <Route path="/maintainCollection" element={<ManterAcervo/>}/>
-            </>
-          )}
+          <Route path="/settings" element={<Settings/>}/>
+          <Route path="/bookingDetails" element={<DetalhesReserva/>}/>
+          <Route path="/maintainCollection" element={<ManterAcervo/>}/>
 
           {/* Rotas Públicas */}
+          <Route path="/" element={<ConsultarTitulos books={books}/>}/>
           <Route path="/reserveTitles/:bookId" element={<ReservarTitulos books={books}/>}/>
           <Route path="/consultTitles/:titleBook" element={<ResultadoConsultarTitulos books={books}/>}/>
-
           <Route path="*" element={<NotFound/>}/>
         </Routes>    
         <FooterPage/>
