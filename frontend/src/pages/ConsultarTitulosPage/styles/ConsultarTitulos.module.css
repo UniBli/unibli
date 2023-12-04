@@ -62,15 +62,21 @@
     margin-bottom: 100px;
 }
 
+.containerBooks a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
 
 .divScrollbarBooks::-webkit-scrollbar {
     height: 0;
 }
-.divScrollbarBooks::-webkit-scrollbar-thumb {
-    background-color: #05590428; /* Cor do tracinho */
-    border-radius: 3px; /* Borda arredondada do tracinho */
+/* .divScrollbarBooks::-webkit-scrollbar-thumb {
+    background-color: #05590428; /* Cor do tracinho 
+    border-radius: 3px; /* Borda arredondada do tracinho 
     width: 20px;
-}
+} */
 
 /*Media queries*/
 /*

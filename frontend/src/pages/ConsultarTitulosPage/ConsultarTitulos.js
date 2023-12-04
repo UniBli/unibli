@@ -5,7 +5,43 @@ import { Link } from 'react-router-dom';
 // CSS scoped
 import styles from './styles/ConsultarTitulos.module.css';
 
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// import required modules
+import { Navigation, Pagination } from 'swiper/modules';
+
+
+
+
 const ConsultarTitulos = ({ books }) => {
+
+  const breakpoints = {
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: -30,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: -40,
+    },
+    1360: {
+      slidesPerView: 5,
+      spaceBetween: -50,
+    },
+  }
 
   return (
     <main>
@@ -21,47 +57,84 @@ const ConsultarTitulos = ({ books }) => {
       </section>
 
       <section className={styles.books}>
+
         <div className={styles.containerBooks}>
           <h2>Análise e Desenvolvimento de Sistemas:</h2>
-          <div className={styles.divScrollbarBooks}>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            navigation={true}
+            pagination={{
+              dynamicBullets:true,
+              clickable: true,
+            }}
+            breakpoints={breakpoints}
+            modules={[Navigation, Pagination]}
+          >
             {books.map((book) => (
-              <Link key={book.id} to={`/reserveTitles/${book.id}`}>
-                <CardBook disponibilidade={book.disponibilidade}
-                  qtd={book.qtd} img={book.img} nome={book.nome}
-                />
-              </Link>
+              <SwiperSlide key={book.id}>
+                <Link to={`/reserveTitles/${book.id}`}>
+                  <CardBook disponibilidade={book.disponibilidade}
+                    qtd={book.qtd} img={book.img} nome={book.nome}
+                  />
+                </Link>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
 
         <div className={styles.containerBooks}>
           <h2>Gestão de Recursos Humanos:</h2>
-          <div className={styles.divScrollbarBooks}>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            navigation={true}
+            pagination={{
+              dynamicBullets:true,
+              clickable: true,
+            }}
+            breakpoints={breakpoints}
+            modules={[Navigation, Pagination]}
+          >
             {books.map((book) => (
-              <Link key={book.id}  to={`/reserveTitles/${book.id}`}>
-                <CardBook disponibilidade={book.disponibilidade}
-                  qtd={book.qtd} img={book.img} nome={book.nome}
-                />
-              </Link>
+              <SwiperSlide key={book.id}>
+                <Link to={`/reserveTitles/${book.id}`}>
+                  <CardBook disponibilidade={book.disponibilidade}
+                    qtd={book.qtd} img={book.img} nome={book.nome}
+                  />
+                </Link>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
 
         <div className={styles.containerBooks}>
           <h2>Gestão Comercial:</h2>
-          <div className={styles.divScrollbarBooks}>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            navigation={true}
+            pagination={{
+              dynamicBullets:true,
+              clickable: true,
+            }}
+            breakpoints={breakpoints}
+            modules={[Navigation, Pagination]}
+          >
             {books.map((book) => (
-              <Link key={book.id} to={`/reserveTitles/${book.id}`}>
-                <CardBook disponibilidade={book.disponibilidade}
-                  qtd={book.qtd} img={book.img} nome={book.nome}
-                />
-              </Link>
+              <SwiperSlide key={book.id}>
+                <Link to={`/reserveTitles/${book.id}`}>
+                  <CardBook disponibilidade={book.disponibilidade}
+                    qtd={book.qtd} img={book.img} nome={book.nome}
+                  />
+                </Link>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
       </section>
 
-    </main>
+    </main >
   );
 }
 

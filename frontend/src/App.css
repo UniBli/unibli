@@ -89,6 +89,8 @@ span.p-button-icon.p-c.pi.pi-bars {
 
 ul.p-datascroller-list li {
     display: inline-block !important;
+    margin: 20px;
+
     /* Exibe os itens horizontalmente */
 }
 
@@ -101,4 +103,16 @@ ul.p-datascroller-list li {
     background: #055904 !important;
     border: 1px solid #055904 !important;
     border-radius: 60px;
+}
+
+
+
+/* Definição GLOBAL - Swiper */
+.swiper-button-prev, .swiper-button-next {
+    color: #055904 !important;
+
+}
+
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    background:#055904 !important;
 }
