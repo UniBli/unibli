@@ -21,6 +21,10 @@ import { Navigation, Pagination } from 'swiper/modules';
 const ConsultarTitulos = ({ books }) => {
 
   const breakpoints = {
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
     360: {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -46,7 +50,7 @@ const ConsultarTitulos = ({ books }) => {
   return (
     <main>
       <section className={styles.banner}>
-        <img className={styles.imgBanner} src="./img_banner.png" alt="" />
+        <img className={styles.imgBanner} src="https://raw.githubusercontent.com/thyagoerick/unibli/main/frontend/public/img_banner.png" alt="" />
         <div className={styles.txtBanner}>
           <p>O sistema <span>UniBli</span> veio</p>
           <p>para facilitar a vida do</p>
@@ -133,7 +137,6 @@ const ConsultarTitulos = ({ books }) => {
           </Swiper>
         </div>
       </section>
-
     </main >
   );
 }

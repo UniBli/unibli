@@ -19,3 +19,12 @@
     flex-direction: column;   
     margin-top: 12vh;
 }
+
+.usersActions button:hover{
+    color: #055904 !important;
+}
+
+.bibliotecarioActions button:hover{
+    background-color: #ffffff !important;
+    color: #055904 !important;
+}
