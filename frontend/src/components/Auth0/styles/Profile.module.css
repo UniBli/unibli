@@ -13,7 +13,7 @@
 }
 
 
-sidebar > h3 ,p {
+.sidebar h3 , .sidebar p {
     margin: 8px;
     color: #ffffff;
     text-align: right;
