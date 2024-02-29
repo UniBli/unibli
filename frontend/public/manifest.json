@@ -1,6 +1,6 @@
 {
-    "short_name": "Unificação de Bibliotecas",
-    "name": "UniBli",
+    "name": "Unificação de Bibliotecas",
+    "short_name": "UniBli",
     "version": "1.0",
     "description": "O UniBli (Unificação de Bibliotecas) consiste em ser um sistema capaz de integrar as bases de dados de diferentes bibliotecas de diferentes Fatecs",
     "icons": [
@@ -11,7 +11,7 @@
         }
     ],
     "author": "Thyago Erick S. Gois",
-    "start_url": "/index.html",
+    "start_url": "/",
     "background_color": "#055904",
     "display":"fullscreen"
   }
