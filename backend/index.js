@@ -1,23 +1,29 @@
+// Import express
 const express = require('express')
 const app = express()
 
+// Import do conn para conexão do Oracle com Sequelize
 const conn = require('./db/conn')
 
-// Imports Modelos
+/*****************IMPORT MODELS****************/
 // Obs.: só o fato delas estarem aqui quando rodar o projeto elas já são criadas.
 const Usuario = require('./models/Usuario')
-app.post('/users/create', async (req, res)=>{
-    const nome = req.body.nome
+/**********************************************/
+
+/*****************IMPORT ROUTES****************/
+const usuariosRotas =  require('./routes/usuariosRotas')
+/**********************************************/
 
 
-    // O inputcheckbox quando vem marcado seu value é 'on', quando vem desmarcado seu value é undefined e o undefined se comporta como false também;
-    console.log(req.body)
+/**************CONFIGURAÇÕES APP****************/
+// Configurar Express para poder pegar o body dos forms
+app.use(express.urlencoded({
+    extended: true
+}))
+app.use(express.json()) //Obter o dado do body em json()
 
-    await Usuario.create({nome}) // espera o usuário ser criado para só depois redirecioná-lo
-
-    res.redirect('/')
-
-})
+app.use('/usuarios', usuariosRotas)//significa que o middleware usuariosRotas será acionado para qualquer requisição cujo caminho comece com '/usuarios'.
+/***********************************************/
 
 
 conn.sync()
