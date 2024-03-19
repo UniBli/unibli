@@ -1,3 +1,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/UniBli/unibli-backend.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/UniBli/unibli-frontend.git
